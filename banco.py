@@ -27,7 +27,7 @@ def adicionar_produto(chat_id, url, titulo, preco):
             )
             return True
         except sqlite3.IntegrityError:
-            return False  # esse link já foi adicionado
+            return False
 
 def listar_produtos(chat_id):
     with conectar() as con:
@@ -55,7 +55,7 @@ def remover_produto(chat_id, produto_id):
             "DELETE FROM produtos WHERE id = ? AND chat_id = ?",
             (produto_id, chat_id),
         )
-        return cur.rowcount > 0  # True se algo foi removido
+        return cur.rowcount > 0
 
 if __name__ == "__main__":
     criar_tabelas()

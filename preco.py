@@ -7,7 +7,6 @@ HEADERS = {
     "Accept-Language": "pt-BR,pt;q=0.9",
 }
 
-# seletores do preço, do mais específico ao mais genérico
 SELETORES_PRECO = [
     "#corePrice_feature_div span.a-offscreen",
     "span.priceToPay span.a-offscreen",
@@ -15,7 +14,7 @@ SELETORES_PRECO = [
 ]
 
 def limpar_preco(texto):
-    # "R$ 1.299,90" -> 1299.90
+
     achado = re.search(r"[\d.]+,\d{2}", texto)
     if not achado:
         return None

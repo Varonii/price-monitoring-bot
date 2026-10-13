@@ -95,7 +95,6 @@ async def checar_precos(context: ContextTypes.DEFAULT_TYPE):
         if novo_preco != ultimo_preco:
             banco.atualizar_preco(produto_id, novo_preco)
 
-        # pausa entre produtos, para não parecer um robô agressivo
         await asyncio.sleep(random.uniform(5, 10))
 
 banco.criar_tabelas()
