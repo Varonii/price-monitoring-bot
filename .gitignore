@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+token.env
+.env
+produtos.db
