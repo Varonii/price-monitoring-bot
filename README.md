@@ -44,8 +44,8 @@ telegram-price-tracker/
 **1. Clone o repositório**
 
 ```bash
-git clone https://github.com/SEU_USUARIO/telegram-price-tracker.git
-cd telegram-price-tracker
+git clone https://github.com/SEU_USUARIO/price-monitoring-bot.git
+cd price-monitoring-bot
 ```
 
 **2. Crie e ative o ambiente virtual**
